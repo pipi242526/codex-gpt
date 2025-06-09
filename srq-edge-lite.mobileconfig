@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- ===== 顶层 Payload ===== -->
+    <key>PayloadDisplayName</key>
+    <string>srq.config.edge-lite.v1</string>
+
+    <!-- TODO: 如需改成公司前缀或其他名字，请修改这一行 -->
+    <key>PayloadIdentifier</key>
+    <string>srq.edge-lite.v1</string>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+
+    <!-- 新随机 UUID -->
+    <key>PayloadUUID</key>
+    <string>3F2640F6-8B3C-4FB4-AA90-5CF3F525840F</string>
+
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+
+    <key>TargetDeviceType</key>
+    <integer>5</integer>
+
+    <!-- ===== 子 Payload：Microsoft Edge ===== -->
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Edge</string>
+
+        <!-- TODO: 如需自定义，请修改这一行 -->
+        <key>PayloadIdentifier</key>
+        <string>srq.config.edge-lite.v1</string>
+
+        <key>PayloadType</key>
+        <string>com.microsoft.Edge</string>
+
+        <!-- 新随机 UUID -->
+        <key>PayloadUUID</key>
+        <string>25E7D1CF-499F-401E-A9BA-CC7D6F756F05</string>
+
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+
+        <!-- 主要策略 -->
+        <key>AddressBarMicrosoftSearchInBingProviderEnabled</key>
+        <false/>
+        <key>BingAdsSuppression</key>
+        <true/>
+        <key>ConfigureDoNotTrack</key>
+        <true/>
+        <key>DiagnosticData</key>
+        <integer>0</integer>
+        <key>HideFirstRunExperience</key>
+        <true/>
+        <key>HubsSidebarEnabled</key>
+        <false/>
+        <key>NewTabPageAllowedBackgroundTypes</key>
+        <integer>3</integer>
+        <key>NewTabPageAppLauncherEnabled</key>
+        <false/>
+        <key>NewTabPageContentEnabled</key>
+        <false/>
+        <key>NewTabPageHideDefaultTopSites</key>
+        <true/>
+        <key>OmniboxMSBProviderEnabled</key>
+        <false/>
+        <key>PersonalizationReportingEnabled</key>
+        <false/>
+        <key>PromotionalTabsEnabled</key>
+        <false/>
+        <key>SendSiteInfoToImproveServices</key>
+        <false/>
+        <key>ShowMicrosoftRewards</key>
+        <false/>
+        <key>ShowOfficeShortcutInFavoritesBar</key>
+        <false/>
+        <key>ShowRecommendationsEnabled</key>
+        <false/>
+        <key>TrackingPrevention</key>
+        <integer>3</integer>
+        <key>UserFeedbackAllowed</key>
+        <false/>
+
+        <!-- 更新与组件 -->
+        <key>UpdateDefault</key>
+        <false/>
+        <key>ComponentUpdatesEnabled</key>
+        <false/>
+
+        <!-- ===== 阻止灰度功能推送 ===== -->
+        <key>ControlledFeatureRolloutUpdatesEnabled</key>
+        <false/>
+      </dict>
+    </array>
+  </dict>
+</plist>
